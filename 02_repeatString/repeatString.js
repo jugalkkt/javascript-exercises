@@ -1,6 +1,8 @@
 const repeatString = function(str, numTimes) {
+    if (numTimes < 0) return "ERROR"
     let temp = str;
-    for (let i = 0; i < numTimes - 1; i++){
+    str = "";
+    for (let i = 0; i < numTimes; i++){
         str += temp;
     }
     return str;
